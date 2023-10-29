@@ -1,13 +1,15 @@
 /*****************************INSTALLATION INSTRUCTIONS******************************************/
 
-/*
+/* (ignore this if you have already followed the instructions of README.md)
+*
+*
 * 1.Register on https://api.unsplash.com to get your API Key for the Unsplash API
 * 2.Register on https://api.openweathermap.org to get your API Key for the OpenWeather API
 
 * 3. Copy your keys from both websites and enter them as strings below like this:
 *
 *           let YOUR_UNSPLASH_API_KEY = {*YOUR_UNSPLASH_API_KEY*};
-*           let YOUR_OPEN_WEATHER_API_KEY = {*YOUR_UNSPLASH_API_KEY*};
+*           let YOUR_OPEN_WEATHER_API_KEY = {*YOUR_OPEN_WEATHER_API_KEY};
 *
 *           Example: let YOUR_UNSPLASH_API_KEY = '_oasijdiA7sd8nwe920923yn';
 * 
@@ -16,7 +18,7 @@
 
 /**********************************************************************************************/
 
-/***********INSERT HERE: ********************/
+/*********** INSERT HERE: ********************/
 let YOUR_UNSPLASH_API_KEY = '';
 let YOUR_OPEN_WEATHER_API_KEY = '';
 /********************************************/
