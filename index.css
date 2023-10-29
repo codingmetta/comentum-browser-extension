@@ -84,22 +84,50 @@ body {
 }
 
 .weather-container{
-    grid-area:top-right ; 
+    grid-area: top-right; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: end;
+}
+.weather-icon{
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.weather-clouds{
+    padding-right: 15px;
+    min-width: 0;
+    margin: 0;
+    font-size: 22px;
+}
+
+.weather-temp{
+    padding-right: 15px;
+    margin: 0;
+    min-width: 0;
+    font-size: 36px;
+    font-weight: bold;
 
 }
+.weather-city{
+    padding-right: 15px;
+    min-width: 0;
+    font-size: 20px;
+}
+
 .author-container{
     grid-area: bottom-left; 
-
-
 }
 
 .img-author{
     font-size: 20px;
-
 } 
 
 .random-container{
     grid-area: bottom-right ; 
-
-
 }

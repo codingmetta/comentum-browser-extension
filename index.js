@@ -15,9 +15,6 @@ let img_default_author = 'Dodi Achmad'
 
 
 
-
-
-
 initialize();
 
 async function initialize() {
@@ -79,7 +76,6 @@ function getCurrentTimeDash() {
 
 async function getWeatherDash() {
 
-
     navigator.geolocation.getCurrentPosition(success);
 
     async function success(position) {
@@ -89,26 +85,44 @@ async function getWeatherDash() {
 
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${YOUR_OPEN_WEATHER_API_KEY}`);
         const data = await res.json();
-        
+        console.log(data.clouds.all);
+        const clouds = getCloudinessDesc(data.clouds.all);
+
+
         const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
         document.body.querySelector(".weather-container").innerHTML = `
-        <img src=${iconUrl} />
-        <p class="weather-temp">${Math.round(data.main.temp)}ºC</p>
+        <img class="weather-icon" src=${iconUrl} />
+        <p class="weather-clouds">${clouds}</p>
+        <p class="weather-temp">${Math.round(data.main.temp)} ºC</p>
     `
-
         const res_city = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=${YOUR_OPEN_WEATHER_API_KEY}`);
         const data_city = await res_city.json();
         document.body.querySelector(".weather-container").innerHTML += `
         <p class="weather-city">${data_city[0].local_names.de}, ${data.name}</p>
     `
-
-  
-
-
-   
     }
 
 }
 
+
+function getCloudinessDesc(cloudiness) {
+
+    if (cloudiness >= 0 && cloudiness < 13) {
+        return 'wolkenlos';
+    }
+    else if (cloudiness >= 13 && cloudiness < 38) {
+        return 'leicht bewölkt';
+    }
+    else if (cloudiness >= 38 && cloudiness < 75) {
+        return 'wolkig';
+
+    } else if (cloudiness >= 75 && cloudiness < 88) {
+        return 'stark bewölkt';
+
+    } else if (cloudiness >= 88 && cloudiness < 100) {
+        return 'bedeckt';
+
+    }
+}
 
 
