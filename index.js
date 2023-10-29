@@ -1,12 +1,27 @@
-//require('dotenv').config();
-//const key = process.env.KEY_ACCESS;
+/**********************************************************************************************/
+
+/*
+* 1.Register on https://api.unsplash.com to get your API Key for the Unsplash API
+* 2.Register on https://api.openweathermap.org to get your API Key for the OpenWeather API
+
+* 3. Copy your keys from both websites and enter them as strings below like this:
+*
+*           let YOUR_UNSPLASH_API_KEY = {*YOUR_UNSPLASH_API_KEY*};
+*           let YOUR_OPEN_WEATHER_API_KEY = {*YOUR_UNSPLASH_API_KEY*};
+*
+*           Example : let YOUR_UNSPLASH_API_KEY = '_oasijdiA7sd8nwe920923yn';
+* 
+* 4. The code is now ready to run on your localhost!  
+*/
+
+/**********************************************************************************************/
+
+/***********INSERT HERE: ********************/
+let YOUR_UNSPLASH_API_KEY = '';
+let YOUR_OPEN_WEATHER_API_KEY = '';
+/********************************************/
 
 
-/********************************************************/
-/*REMEMBER TO DELETE THE KEY BEFORE PUSHING TO GITHUB!!!!*/
-let YOUR_ACCESS_KEY = '_NDhKI8rzg8QE0gjdCK6utLWaPaSVhrNmIMzap_U0pw';
-let YOUR_OPEN_WEATHER_API_KEY = '3ac3bd9c3d0675956c170b73fd162488';
-/********************************************************/
 
 let img_url = '';
 let img_author = '';
@@ -44,7 +59,7 @@ async function getCryptoDash() {
 
 
 async function getBackground() {
-    const res = await fetch(`https://api.unsplash.com/photos/random?client_id=${YOUR_ACCESS_KEY}&orientation=landscape&query=forest`)
+    const res = await fetch(`https://api.unsplash.com/photos/random?client_id=${YOUR_UNSPLASH_API_KEY}&orientation=landscape&query=forest`)
     const data = await res.json();
     console.log(data);
     img_author = data.user.name;
@@ -101,7 +116,6 @@ async function getWeatherDash() {
         <p class="weather-city">${data_city[0].local_names.de}, ${data.name}</p>
     `
     }
-
 }
 
 

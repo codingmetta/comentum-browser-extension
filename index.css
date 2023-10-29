@@ -100,22 +100,24 @@ body {
 }
 
 .weather-clouds{
-    padding-right: 15px;
+    padding-right: 20px;
     min-width: 0;
     margin: 0;
     font-size: 22px;
 }
 
 .weather-temp{
-    padding-right: 15px;
-    margin: 0;
+    padding-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     min-width: 0;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
 
 }
 .weather-city{
-    padding-right: 15px;
+    margin: 0;
+    padding-right: 20px;
     min-width: 0;
     font-size: 20px;
 }
