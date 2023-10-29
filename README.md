@@ -1,11 +1,11 @@
-1. Project Overview
+# Project Overview
 
 It's an Dashboard App, that can be deployed as Chrome Browser Extension. The Dashboard shows the weather of your current location, useful stats about DogeCoin and the background theme changes on every visit.
 
-2. Installation Instructions
+# Installation Instructions
 
 
-# Get Access to the API's that are necessary for the project
+## Get Access to the API's that are necessary for the project
 
 Unsplash API: 
     - Visit https://api.unsplash.com and register yourself 
@@ -22,18 +22,18 @@ OpenWeather API:
 The project is now ready to run on localhost.
 
 
-3. Usage Guide
+# Usage Guide
 
 No instructions needed. 
 
 
-4. Configuration
+# Configuration
 
 If you want to deploy this project as Chrome Browser Extension, you can edit 
 details of it in the manifest.json file.
 
 
-5. License
+# License
 
 MIT License
 
