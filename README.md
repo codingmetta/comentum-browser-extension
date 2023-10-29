@@ -8,16 +8,16 @@ It's an Dashboard App, that can be deployed as Chrome Browser Extension. The Das
 ## Get Access to the API's that are necessary for the project
 
 Unsplash API: 
-    - Visit https://api.unsplash.com and register yourself 
-    - Copy your personal API Key from your Unsplash Account Dashboard
-    - Open "index.js" and insert your API key right here:
-        -> let YOUR_UNSPLASH_API_KEY = {*YOUR_UNSPLASH_API_KEY*};
+* Visit [Unsplash](https://api.unsplash.com) and create a personal account 
+* Copy your personal API Key from your Unsplash Account Dashboard
+* Open `index.js` and insert your API key right here:
+   * `const YOUR_UNSPLASH_API_KEY = {*YOUR_UNSPLASH_API_KEY*}`
 
 OpenWeather API: 
-    - Visit https://openweathermap.org/api and register yourself 
-    - Copy your personal API Key from your OpenWeather Account Dashboard 
-    - Open "index.js" and insert your API key right here:
-       ->  let YOUR_OPEN_WEATHER_API_KEY = {*YOUR_OPEN_WEATHER_API_KEY};
+* Visit [OpenWeather](https://openweathermap.org/api) and create a personal account 
+* Copy your personal API Key from your OpenWeather Account Dashboard 
+* Open `index.js` and insert your API key right here:
+   * `const YOUR_OPEN_WEATHER_API_KEY = {*YOUR_OPEN_WEATHER_API_KEY}`
 
 The project is now ready to run on localhost.
 

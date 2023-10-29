@@ -1,36 +1,22 @@
-/*****************************INSTALLATION INSTRUCTIONS******************************************/
-
-/* (ignore this if you have already followed the instructions of README.md)
-*
-*
-* 1.Register on https://api.unsplash.com to get your API Key for the Unsplash API
-* 2.Register on https://api.openweathermap.org to get your API Key for the OpenWeather API
-
-* 3. Copy your keys from both websites and enter them as strings below like this:
-*
-*           let YOUR_UNSPLASH_API_KEY = {*YOUR_UNSPLASH_API_KEY*};
-*           let YOUR_OPEN_WEATHER_API_KEY = {*YOUR_OPEN_WEATHER_API_KEY};
-*
-*           Example: let YOUR_UNSPLASH_API_KEY = '_oasijdiA7sd8nwe920923yn';
-* 
-* 4. The code is now ready to run on your localhost!  
-*/
-
-/**********************************************************************************************/
-
-/*********** INSERT HERE: ********************/
-let YOUR_UNSPLASH_API_KEY = '';
-let YOUR_OPEN_WEATHER_API_KEY = '';
-/********************************************/
 
 
+
+/********************************************************************/
+/** Insert your API keys like this right below this comment:
+ * 
+ * Example: const YOUR_UNSPLASH_API_KEY = '_oasijdiA7sd8nwe920923yn';
+ **/
+const YOUR_UNSPLASH_API_KEY = '';
+const YOUR_OPEN_WEATHER_API_KEY = '';
+/********************************************************************/
+
+
+/*Default values, if the Unsplash API isn't working*/
+const img_default_url = 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTEwMjl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI4NDE2NzA&ixlib=rb-1.2.1&q=80&w=1080';
+const img_default_author = 'Dodi Achmad'
 
 let img_url = '';
 let img_author = '';
-let img_default_url = 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTEwMjl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI4NDE2NzA&ixlib=rb-1.2.1&q=80&w=1080';
-let img_default_author = 'Dodi Achmad'
-
-
 
 initialize();
 
