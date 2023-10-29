@@ -7,6 +7,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    text-shadow: 1px 1px 2px #474747;
+    color:white;
+    font-family: sans-serif;
 }
 
 body {
@@ -15,4 +18,88 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.app{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:150px 1fr 150px; 
+    grid-template-columns:20% 60% 20%; 
+    grid-template-areas:  
+    "top-left . top-right" 
+    ". center ." 
+    "bottom-left . bottom-right" 
+  ; 
+    justify-items: center;
+
+}
+.main-container{
+    grid-area: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.main-container > .time-container{
+    font-size: 140px;
+}
+
+.main-container > .focus-container{
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    padding: 26px;
+    margin-top: 60px;
+}
+.main-container > .quote-container{
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.coins-container{
+    grid-area: top-left; 
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.coins-top{
+    width: 65%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.coins-top > span{
+    font-size: 30px;
+}
+.coins-data{
+    padding-left: 10px;
+}
+
+.weather-container{
+    grid-area:top-right ; 
+
+}
+.author-container{
+    grid-area: bottom-left; 
+
+
+}
+
+.img-author{
+    font-size: 20px;
+
+} 
+
+.random-container{
+    grid-area: bottom-right ; 
+
+
 }
