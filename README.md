@@ -30,7 +30,7 @@ No instructions needed.
 # Configuration
 
 If you want to deploy this project as Chrome Browser Extension, you can edit 
-details of it in the manifest.json file.
+details in the `manifest.json` file.
 
 
 # License
